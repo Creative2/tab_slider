@@ -1,7 +1,7 @@
 TAB SLIDER FOR WINDOWS DESKTOP
 ===============================
 
-"Let's reduce messed up icon on my windows desktop" that was the thought for which this utility has mad.
+"Let's reduce messed up icon on my windows desktop" that was the thought for which this utility has made.
 ![alt tag](http://fc08.deviantart.net/fs71/i/2013/085/6/c/desktop_slider_for_windows_xp_7_8_a_utility_by_concept2yogi-d5zb7of.jpg)
 
 This utility will do this
