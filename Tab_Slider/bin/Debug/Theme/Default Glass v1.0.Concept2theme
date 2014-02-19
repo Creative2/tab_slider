@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<themeInfo Name="Default Glass v1.0" Author="Yogender Solanki" msg="This is the Default theme that u can use with tab slider..and to customize the theme plz read documentation">
+<AuthorLogo path=""/>
+<SliderPanalBG path="SliderPanalBG.png" xstart="" xend="" ystart="" yend=""/>
+<SlidePanalAddButton path="SlidePanalAddButton.png" left="648" top="450" loc="r"/>
+<titletext PosX="23" PosY="445"/>
+<SlidePnanalScrollButn path="SlidePnanalScrollButn.png" vertical="B"/>
+<SlidePanalIconBG path="SlidePanalIconBG.png"/>
+<settings path="settings.png" posx="660" posy="450"/>
+<NotActive path="notactive.png" />
+<HolderBG path="HolderBG.png"/>
+</themeInfo>

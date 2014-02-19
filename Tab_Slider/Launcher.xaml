@@ -1,0 +1,8 @@
+﻿<Window x:Class="Tab_Slider.Launcher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Launcher" ShowInTaskbar="False"  Height="300" Width="300" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" Background="#00000000" Loaded="Window_Loaded" GotFocus="Window_GotFocus_1" StateChanged="Window_StateChanged_1" Closing="Window_Closing_1">
+    <Grid Name="g1">
+        
+    </Grid>
+</Window>

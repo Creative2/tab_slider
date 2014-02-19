@@ -1,0 +1,9 @@
+﻿<Window x:Class="Tab_Slider.PanalWinodw"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PanalWinodw" WindowStyle="None" ShowInTaskbar="False" AllowsTransparency="True" Background="#00000000" Loaded="Window_Loaded" WindowStartupLocation="Manual" AllowDrop="True" Drop="Window_Drop_1" Deactivated="Window_Deactivated_1" >
+    <Grid Name="workbench" AllowDrop="True" >
+        
+        
+    </Grid>
+</Window>

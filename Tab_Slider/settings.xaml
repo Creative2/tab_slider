@@ -1,0 +1,223 @@
+﻿<Window x:Class="Tab_Slider.settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tab Slider Configuration" ShowInTaskbar="False" Height="524" Width="465" Loaded="Window_Loaded" WindowStyle="ThreeDBorderWindow" ResizeMode="NoResize">
+    <Window.Resources>
+        <OuterGlowBitmapEffect x:Key="MYGLOW" GlowSize="2.5" GlowColor="Purple" Opacity=".3" ></OuterGlowBitmapEffect>
+        <Style x:Key="RedGlowItemContainer" TargetType="{x:Type ListBoxItem}">
+            <Setter Property="Foreground" Value="Purple"/>
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                       
+                        <Border Background="White"
+                    CornerRadius="3"
+                    BorderThickness="0"
+                    x:Name="IconBorder"
+                    Margin="3,3,3,3"
+                   Padding="3,3,3,3" >
+                            <ContentPresenter />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="true">
+
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter TargetName="IconBorder" Property="BitmapEffect">
+                                  
+                                    <Setter.Value>
+                                        <OuterGlowBitmapEffect GlowColor="Purple"  GlowSize="2.4" Opacity=".5" />
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter TargetName="IconBorder" Property="Background" Value="Purple"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="darkBlueBrush" Color="Purple" />
+        <DropShadowEffect Color="Purple"  Opacity=".7" ShadowDepth="0.3" BlurRadius="6" x:Name="Shadow" Direction="0" x:Key="ShadowME"/>
+
+        <Style x:Key="groupBoxHeader" TargetType="{x:Type Border}">
+            <Setter Property="CornerRadius" Value="2" />
+            <Setter Property="Padding" Value="5 1 5 1" />
+            <Setter Property="TextBlock.Foreground" Value="White" />
+            <Setter Property="TextBlock.FontSize" Value="11" />
+            <Setter Property="TextBlock.FontWeight" Value="Bold" />
+            <Setter Property="TextBlock.Background" Value="Purple" />
+
+        </Style>
+        <Style x:Key="header" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="{StaticResource darkBlueBrush}" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Padding" Value="10 5 10 5" />
+            <Setter Property="TextBlock.Foreground" Value="White" />
+            <Setter Property="TextBlock.FontSize" Value="20" />
+            <Setter Property="TextBlock.FontWeight" Value="Bold" />
+        </Style>
+        
+
+    </Window.Resources>
+    <Grid>
+        <TabControl Height="477" HorizontalAlignment="Left" Name="tabControl1" VerticalAlignment="Top" Width="404" Background="White" Margin="13,3,0,0" DataContext="{Binding}" TabStripPlacement="Top">
+            <TabItem  Name="tabItem1" Header="Visual Settings" >
+                
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="127*"/>
+                        <ColumnDefinition Width="22*"/>
+                        <ColumnDefinition Width="286*"/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox  Height="160" HorizontalAlignment="Left" Margin="8,205,0,0" x:Name="groupBox4" VerticalAlignment="Top" Width="407" BorderBrush="#FF6407A4" Grid.ColumnSpan="3">
+                        <GroupBox.Header>
+                            <Border Background="Purple"  Style="{StaticResource groupBoxHeader}" Effect="{StaticResource ShadowME}">
+                            <TextBlock Text="Effect Settings" />
+                        </Border>
+                        </GroupBox.Header>
+                        <Grid Margin="0,0,-2,0">
+                            <Slider AutoToolTipPlacement="None" Height="23" HorizontalAlignment="Left" Margin="20,44,0,0" Maximum="1000" x:Name="sld_slide" SelectionEnd="200" SelectionStart="1000" VerticalAlignment="Top" Width="277" ValueChanged="sld_slide_ValueChanged" />
+                            <Label Content="Slide Animation Duration" Height="28" HorizontalAlignment="Left" Margin="10,10,0,0" x:Name="label10" VerticalAlignment="Top" />
+                            <Slider AutoToolTipPlacement="None" Height="23" HorizontalAlignment="Left" Margin="20,105,0,0" Maximum="1000" x:Name="sld_fade" SelectionEnd="200" SelectionStart="1000" VerticalAlignment="Top" Width="277" ValueChanged="sld_fade_ValueChanged" />
+                            <Label Content="Fade Animation Duration" Height="28" HorizontalAlignment="Left" Margin="10,71,0,0" x:Name="label11" VerticalAlignment="Top" />
+                            <Label Content="..MS" Height="28" HorizontalAlignment="Left" Margin="201,10,0,0" x:Name="lbl_Slide" VerticalAlignment="Top" Width="76" />
+                            <Label Content="..MS" Height="28" HorizontalAlignment="Left" Margin="201,71,0,0" x:Name="lbl_Fade" VerticalAlignment="Top" Width="76" />
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox  Height="139" HorizontalAlignment="Left" Margin="6,24,0,0" x:Name="groupBox3" VerticalAlignment="Top" Width="409" BorderBrush="#FF65067A" Grid.ColumnSpan="3">
+                        <GroupBox.Header>
+                            <Border Background="Purple"  Style="{StaticResource groupBoxHeader}" Effect="{StaticResource ShadowME}">
+                                <TextBlock Text="Icon Setting" />
+                            </Border>
+                        </GroupBox.Header>
+                        <Grid Height="117">
+                            <CheckBox Height="21" HorizontalAlignment="Left" Margin="12,14,0,0" x:Name="chk_textshadow" VerticalAlignment="Top" >
+                                <CheckBox.Content>
+                                    <Border CornerRadius="2.5" Background="Purple" >
+                                        <TextBlock Text=" Text Shadow " Foreground="White" FontSize="12" Margin="2,2,2,2" FontWeight="ExtraBold" TextDecorations="{x:Null}" FontFamily="Segoe UI Semibold" />
+                                    </Border>
+                                </CheckBox.Content>
+                            </CheckBox>
+                            <CheckBox  Height="32" HorizontalAlignment="Left" Margin="117,14,0,0" x:Name="chk_iconShadow" VerticalAlignment="Top" >
+                                <CheckBox.Content>
+                                    <Border CornerRadius="2.5" Background="Purple" >
+                                        <TextBlock Text=" Icon Shadow " Foreground="White" FontSize="12" Margin="2,2,2,2" FontWeight="ExtraBold" TextDecorations="{x:Null}" FontFamily="Segoe UI Semibold" />
+                                    </Border>
+                                </CheckBox.Content>
+                            </CheckBox>
+                            <ComboBox Height="23" HorizontalAlignment="Left" Margin="71,51,0,0" x:Name="cmb_size" VerticalAlignment="Top" Width="243">
+                                <ComboBoxItem Content="48 PX" Background="#00000000" />
+                                <ComboBoxItem Content="64 PX" />
+                                <ComboBoxItem Content="96 PX" />
+                            </ComboBox>
+                            <Label Content="ICON Size" Height="28" HorizontalAlignment="Left" Margin="4,49,0,0" x:Name="label12" VerticalAlignment="Top" />
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox  HorizontalAlignment="Left" Margin="521,35,-533,0" VerticalAlignment="Top" Height="313" Width="298" BorderBrush="#FF450663" Grid.Column="2">
+                        <GroupBox.Header>
+                            <Border Background="Purple"  Style="{StaticResource groupBoxHeader}" Effect="{StaticResource ShadowME}">
+                                <TextBlock Text="Theme" />
+                            </Border>
+                        </GroupBox.Header>
+                        <Grid>
+                            
+                            <ComboBox Height="23" HorizontalAlignment="Left" Margin="10,20,0,0" x:Name="cmb_themelist" VerticalAlignment="Top" Width="210" SelectionChanged="cmb_themelist_SelectionChanged" />
+                        <RichTextBox IsReadOnly="True" Height="154" HorizontalAlignment="Left" Margin="10,84,0,0" x:Name="rct_themedeatilbox" VerticalAlignment="Top" Width="257" Cursor="Arrow" />
+                            <Label x:Name="lb_thminfo" Content="Theme Info" HorizontalAlignment="Left" Margin="8,54,0,0" VerticalAlignment="Top" Foreground="#FF5F047A"/>
+                        </Grid>
+                    </GroupBox>
+                    <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="113,387,0,0" x:Name="btn_effectSave" VerticalAlignment="Top" Width="75" Click="btn_effectSave_Click" Grid.Column="2" />
+
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="Holder &amp; ICON" Name="tabItem2" >
+                <Grid Background="White" Margin="0,1,0,0" >
+                    <Grid Height="142" Margin="10,22,23,200">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="18*" />
+                            <ColumnDefinition Width="293*" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <GroupBox  Margin="46,-2,0,0" BorderBrush="#FF79168F" HorizontalAlignment="Left" Width="335" Height="130" VerticalAlignment="Top">
+                        <GroupBox.Header>
+                            <Border Background="Purple"  Style="{StaticResource groupBoxHeader}" Effect="{StaticResource ShadowME}">
+                                <TextBlock Text="Holder" />
+                            </Border>
+                        
+                        </GroupBox.Header>
+                        <Grid>
+                        <ComboBox ItemContainerStyle="{StaticResource RedGlowItemContainer}"  x:Name="cmb_holder" HorizontalAlignment="Left" Height="22" Margin="101,3,0,0" VerticalAlignment="Top" Width="209" BorderThickness="0" SelectionChanged="cmb_holder_SelectionChanged" BorderBrush="#FF540381">
+                            
+                        </ComboBox>
+                            <Button Content="Remove" Height="25" HorizontalAlignment="Left" Margin="258,67.37,0,0" x:Name="btn_remove" VerticalAlignment="Top" Width="53" Click="btn_remove_Click" />
+                            <Button Content="Add" HorizontalAlignment="Left" Margin="107,67.113,0,0" x:Name="bt_addnew" Width="48" Height="24" VerticalAlignment="Top" RenderTransformOrigin="-4.683,1.333" Click="bt_addnew_Click" />
+                            <Button Content="Update" HorizontalAlignment="Left" Margin="186,68.37,0,0" x:Name="bt_update" Width="48" Click="bt_update_Click" Height="24" VerticalAlignment="Top" RenderTransformOrigin="-4.683,1.333" />
+                            <TextBox Height="24" HorizontalAlignment="Left" Margin="101,33.113,0,0" x:Name="hldername" VerticalAlignment="Top" Width="209" />
+                            <Canvas HorizontalAlignment="Left" Height="93.388" Margin="0.417,1.483,0,0" VerticalAlignment="Top" Width="92.583">
+                                <Canvas.Background>
+                                    <ImageBrush ImageSource="Images/BGCNN.png"/>
+                                </Canvas.Background>
+                                <Image Height="56.775" HorizontalAlignment="Left" x:Name="img_edit" Source="/Tab%20Slider%20v1;component/Images/errorimg.PNG"  Stretch="Fill" VerticalAlignment="Top" Width="55"  Canvas.Top="11" Canvas.Left="18" />
+                                <Label Content="Click to Change" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="8" Canvas.Top="66" BorderBrush="#FFDC4848" Foreground="#FF160CE6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Cursor="Hand" MouseDown="Label_MouseDown_1" Height="22.388" Width="76.772" FontSize="9">
+                                    <Label.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleY="1" ScaleX="1"/>
+                                            <SkewTransform AngleY="0" AngleX="0"/>
+                                            <RotateTransform Angle="0"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Label.RenderTransform>
+                                </Label>
+                            </Canvas>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox  Margin="48,130,0,92.08" Width="330" BorderBrush="#FF540472" HorizontalAlignment="Left">
+                        <GroupBox.Header>
+                            <Border Background="Purple"  Style="{StaticResource groupBoxHeader}" Effect="{StaticResource ShadowME}">
+                                <TextBlock Text="Shortcut" />
+                            </Border>
+                        </GroupBox.Header>
+                        <ListBox x:Name="lst_icons" ItemContainerStyle="{StaticResource RedGlowItemContainer}"   HorizontalAlignment="Left" Margin="0,5,-2,0" Width="320" BorderThickness="0" KeyDown="lst_icons_KeyDown" Height="194" VerticalAlignment="Top"/>
+                    </GroupBox>
+                    <RadioButton x:Name="rd_spcl"  HorizontalAlignment="Left" Margin="64,359,0,0" VerticalAlignment="Top" Checked="rd_spcl_Checked">
+                        <RadioButton.Content>
+                            <Border CornerRadius="2.5" Background="Purple" >
+                                <TextBlock Text=" Special Folder " Foreground="White" FontSize="12" Margin="2,2,2,2" FontWeight="ExtraBold" TextDecorations="{x:Null}" FontFamily="Segoe UI Semibold" />
+                            </Border>
+                        </RadioButton.Content>
+                    </RadioButton>
+                    <RadioButton x:Name="rd_files"  HorizontalAlignment="Left" Margin="280,359,0,0" VerticalAlignment="Top" IsChecked="True" >
+                        <Border CornerRadius="2.5" Background="Purple" >
+                            <TextBlock Text=" Files " Foreground="White" FontSize="12" Margin="2,2,2,2" FontWeight="ExtraBold" TextDecorations="{x:Null}" FontFamily="Segoe UI Semibold" />
+                        </Border>
+                    </RadioButton>
+                    <RadioButton x:Name="rd_fldr"  HorizontalAlignment="Left" Margin="188,359,0,0" VerticalAlignment="Top">
+                        <Border CornerRadius="2.5" Background="Purple" >
+                            <TextBlock Text=" Folders " Foreground="White" FontSize="12" Margin="2,2,2,2" FontWeight="ExtraBold" TextDecorations="{x:Null}" FontFamily="Segoe UI Semibold" />
+                        </Border>
+                    </RadioButton>
+                    <ComboBox x:Name="cmb_special" HorizontalAlignment="Left" Margin="62,383.96,0,0" VerticalAlignment="Top" Width="277" IsEnabled="False"/>
+                    <TextBox x:Name="tx_path" HorizontalAlignment="Left" Height="23" Margin="65,413.04,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" IsReadOnly="True"/>
+                    <Button x:Name="bt_browse" Content="......" HorizontalAlignment="Left" Margin="299,414.08,0,0" VerticalAlignment="Top" Width="38" Click="bt_browse_Click"/>
+                    <Button x:Name="btn_addicon" Content="Add" HorizontalAlignment="Left" Margin="344,396.96,0,0" VerticalAlignment="Top" Width="38" Height="25" Click="Button_Click_1" RenderTransformOrigin="1.5,-1.16"/>
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="About" >
+                <Grid>
+                <Image Height="347" Name="image3" Stretch="Uniform" Width="339" Source="Images/MyLogo.PNG" Margin="48,6.02,48,92.02" />
+                <Label Content="Copyright © Concept2 2012. A freeware utility programme." Height="28" HorizontalAlignment="Left" Margin="51,266,0,0" Name="label13" VerticalAlignment="Top" />
+                <Label Content="Special thanks to...." Height="28" HorizontalAlignment="Left" Margin="153,327,0,0" Name="label14" VerticalAlignment="Top" />
+                <Label Content="Google, Microsoft, CodeProject, StackOverflow, DeviantArt" Height="28" HorizontalAlignment="Left" Margin="42.306,355,0,0" Name="label15" VerticalAlignment="Top" FontStretch="UltraExpanded" FontWeight="Bold" FontStyle="Italic" />
+                <Label Content="Designed and Devolped By Yogender Solanki  ." Height="28" HorizontalAlignment="Left" Margin="81,299,0,0" Name="label16" VerticalAlignment="Top" />
+                    <Image Height="33" HorizontalAlignment="Left" Margin="8,6,0,0" Name="image4" Stretch="Fill" VerticalAlignment="Top" Width="31" Source="Images/facebook-logo copy.png" Cursor="Hand" MouseLeftButtonDown="image4_MouseLeftButtonDown" />
+                    <Image Height="33" HorizontalAlignment="Left" Margin="51,6,0,0" Name="image5" Stretch="Fill" VerticalAlignment="Top" Width="31" Source="Images/deviantART_Icon copy.png" Cursor="Hand" MouseLeftButtonDown="image5_MouseLeftButtonDown" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -1,0 +1,26 @@
+c:\users\truth\documents\visual studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\App.g.cs
+c:\users\truth\documents\visual studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\Tab_Slider.Properties.Resources.resources
+c:\users\truth\documents\visual studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\Tab_Slider.csproj.GenerateResource.Cache
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\PanalWinodw.baml
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\PanalWinodw.g.cs
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\Tab_Slider.csprojResolveAssemblyReference.cache
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\Launcher.baml
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\Launcher.g.cs
+C:\Users\Truth\documents\visual studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\settings.baml
+C:\Users\Truth\documents\visual studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\settings.g.cs
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\Interop.Shell32.dll
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\Tab_Slider.csproj.ResolveComReference.cache
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\ADDICON.baml
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\ADDICON.g.cs
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\bin\Debug\Interop.Shell32.dll
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\bin\Debug\Tab Slider Beta.exe.config
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\bin\Debug\Tab Slider Beta.exe
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\bin\Debug\Tab Slider Beta.pdb
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\Tab Slider Beta_MarkupCompile.cache
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\Tab Slider Beta.g.resources
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\Tab Slider Beta.exe
+C:\Users\Truth\Documents\Visual Studio 2010\Projects\Tab_Slider\Tab_Slider\obj\x86\Debug\Tab Slider Beta.pdb

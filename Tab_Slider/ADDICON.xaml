@@ -1,0 +1,44 @@
+﻿<Window x:Class="Tab_Slider.ADDICON"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="" Height="316" Width="518" WindowStyle="None" AllowsTransparency="True"  BorderThickness="0,0,0,1" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown_1">
+    <Window.Resources>
+        
+        <SolidColorBrush x:Key="darkBlueBrush" Color="Purple" />
+        <DropShadowEffect Color="Purple"  Opacity=".7" ShadowDepth="0.3" BlurRadius="6" x:Name="Shadow" Direction="0" x:Key="ShadowME"/>
+            
+        <Style x:Key="groupBoxHeader" TargetType="{x:Type Border}">
+            <Setter Property="CornerRadius" Value="2" />
+            <Setter Property="Padding" Value="5 1 5 1" />
+            <Setter Property="TextBlock.Foreground" Value="White" />
+            <Setter Property="TextBlock.FontSize" Value="11" />
+            <Setter Property="TextBlock.FontWeight" Value="Bold" />
+            <Setter Property="TextBlock.Background" Value="Purple" />
+            
+        </Style>
+        <Style x:Key="header" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="{StaticResource darkBlueBrush}" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Padding" Value="10 5 10 5" />
+            <Setter Property="TextBlock.Foreground" Value="White" />
+            <Setter Property="TextBlock.FontSize" Value="20" />
+            <Setter Property="TextBlock.FontWeight" Value="Bold" />
+        </Style>
+        <Style TargetType="{x:Type GroupBox}">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="Purple"/>
+        </Style>
+
+    </Window.Resources>
+    <Window.Background>
+        <ImageBrush ImageSource="Images/ABOUT.png" Stretch="Uniform"/>
+    </Window.Background>
+    <Grid MouseDown="Grid_MouseDown_1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="233*"/>
+            <ColumnDefinition Width="272*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Window>

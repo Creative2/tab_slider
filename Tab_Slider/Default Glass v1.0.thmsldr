@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<themeInfo Name="Default Glass v1.0" Author="Yogender Solanki">
+<AuthorLogo path=""/>
+<SliderPanalBG path="SliderPanalBG.png"/>
+<SlidePanalAddButton path="SlidePanalAddButton.png"/>
+<SlidePnanalScrollButn path="SlidePnanalScrollButn.png"/>
+<SlidePanalIconBG path="SlidePanalIconBG.png"/>
+<HolderBG path="HolderBG.png"/>
+
+</themeInfo>

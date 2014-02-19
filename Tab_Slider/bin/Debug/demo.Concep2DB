@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConceptDB theme="Default Glass v1.0" IconShadow="True" Slide="348" Fade="130" TextShadow="True" IconSize="Small">
+  <holder ID="0" Image="System.PNG" Name="System">
+    <file isFile="False" Path="shell:MyComputerFolder" Image="" Count="2" />
+    <file isFile="False" Path="shell:RecycleBinFolder" Image="" Count="1" />
+    <file isFile="False" Path="shell:Personal" Image="" Count="1" />
+    <file isFile="False" Path="shell:My Video" Image="" Count="1" />
+    <file isFile="False" Path="shell:My Pictures" Image="" Count="1" />
+    <file isFile="False" Path="shell:Games" Image="" Count="1" />
+    <file isFile="False" Path="shell:ConnectionsFolder" Image="" Count="1" />
+    <file isFile="True" Path="I:\" Image="" Count="1" />
+    <file isFile="True" Path="J:\" Image="" Count="1" />
+    <file isFile="True" Path="H:\" Image="" Count="1" />
+  </holder>
+  <holder ID="1" Image="Shortcut.PNG" Name="Shortcut">
+    <file isFile="True" Path="C:\Program Files (x86)\Samsung\Easy Settings\ControlCenter.exe" Image="" Count="1" />
+    <file isFile="True" Path="C:\Program Files (x86)\NeoSmart Technologies\EasyBCD\EasyBCD.exe" Image="" Count="1" />
+    <file isFile="True" Path="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" Image="" Count="1" />
+    <file isFile="True" Path="C:\Program Files (x86)\Mozilla Firefox\firefox.exe" Image="" Count="1" />
+    <file isFile="True" Path="C:\Program Files (x86)\EA Games\Need for Speed Most Wanted\NFS13.exe" Image="" Count="1" />
+    <file isFile="True" Path="C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" Image="" Count="1" />
+    <file isFile="True" Path="C:\Program Files (x86)\Counter-Strike Global Offensive\csgo_launcher.exe" Image="" Count="1" />
+    <file isFile="True" Path="C:\Users\Yogender\Desktop\Hello.rtf" Image="" Count="1" />
+    <file isFile="True" Path="C:\Users\Yogender\Desktop\Internet Explorer Troubleshooting.url" Image="" Count="1" />
+    <file isFile="True" Path="C:\Program Files (x86)\Smart PC Solutions\Smart Driver Updater\SmartDriverUpdater.exe" Image="" Count="1" />
+  </holder>
+  <holder ID="2" Image="files.PNG" Name="Files">
+  </holder>
+</ConceptDB>
